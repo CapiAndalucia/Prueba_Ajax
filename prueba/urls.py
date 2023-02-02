@@ -4,6 +4,7 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.registro, name='personas'),
+    path('', views.mostrar, name='mostrar'),
+    path('get_news/', views.filtrar, name='filtrar'),
 
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
